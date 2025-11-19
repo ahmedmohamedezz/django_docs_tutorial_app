@@ -24,6 +24,20 @@
 
 - run `python manage.py shell` to use the API provided by django (auto imports models)
 
+- when a request is made to a specific url. django loads the **_project.urls_** file. then find **_urlpatterns_** variable, and traverse the patterns in order
+  - if a pref is matching a certain app urlCONF. it strips the pref and send the remaining part to that app urlCONF
+
+- having several template files with the same name `index.html` will prevent django from recognizing them, because it returns the first matching template name
+  - that's why we may use the django convention of putting templates in `app_name/templates/app_name/file.html`
+
+
+- the `render(request, view_path, [context])` method is a shortcut of loading a template and rendering it within a `HttpResponse` returned from a view
+
+- the `get_object_or_404(model, args)` method is a shortcut of getting an instance object from that model if one exists matching the given _args_ or raising `Http404` in the corresponding view function. it pass the _args_ to the model's manager method `get()`
+  - it returns the object or raise a `Http404`
+  - `get_list_or_404()` do the same, but uses `filter()` instead of `get()`
+  
+
 <!--
     ext.
         - django
