@@ -21,6 +21,9 @@
 - if you want to see the sql behind a migration file. use `sqlmigrate` command
     - `python manage.py sqlmigrate polls 0001`
 
+
+- run `python manage.py shell` to use the API provided by django (auto imports models)
+
 <!--
     ext.
         - django
