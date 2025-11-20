@@ -50,12 +50,11 @@
 
 - the default context_object_name for a ListView is the model_name_list (question_list)
 
-<!--
-    ext.
-        - django
-        - drf snippets
-        - icons
-        - pylance
-        - python [debugger|environments]
-        - python indent
- -->
+- **_automated tests_** is letting the system do the testing work for you. you create a set of tests and change the code, and you run the tests to check that the code is still working as expected
+
+- test classes should subclass the `django.test.TestCase` class
+- python look for tests in any file with name starting with **_test_**
+
+- to run the tests of an application, run `python manage.py test app_name`
+
+- a good way to spot untested parts of your application is to check code coverage
