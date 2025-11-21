@@ -33,6 +33,8 @@
 
   - that's why we may use the django convention of putting templates in `app_name/templates/app_name/file.html`
 
+  - same for static files `static/app_name/file.(css, js, png)`
+
 - the `render(request, view_path, [context])` method is a shortcut of loading a template and rendering it within a `HttpResponse` returned from a view
 
 - the `get_object_or_404(model, args)` method is a shortcut of getting an instance object from that model if one exists matching the given _args_ or raising `Http404` in the corresponding view function. it pass the _args_ to the model's manager method `get()`
