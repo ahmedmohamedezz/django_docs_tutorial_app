@@ -60,3 +60,9 @@
 - to run the tests of an application, run `python manage.py test app_name`
 
 - a good way to spot untested parts of your application is to check code coverage
+
+- the admin page offers inlines like `StackedInline` and `TabularInline`
+
+- the `DIRS` in `settings.TEMPLATES` entry is a list of filesystem directories to check when loading django templates (search path)
+
+- 

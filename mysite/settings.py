@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 USE_TZ = True
-TIME_ZONE = 'Africa/Cairo'
+TIME_ZONE = "Africa/Cairo"
 
 
 # Application definition
@@ -58,7 +58,7 @@ ROOT_URLCONF = "mysite.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
